@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="style.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css"
+            rel="stylesheet"
+        />
+
+        <title>Tip Calculator</title>
+    </head>
+    <body>
+        <div class="box">
+            <h1 class="calculator-title">Tip Calculator</h1>
+            <div class="container">
+                <form action="" class="input-section">
+                    <div class="inputs">
+                        <label for="bill">Bill</label>
+                        <input
+                            type="text"
+                            id="bill"
+                            name="bill"
+                            placeholder="0.00"
+                        />
+                    </div>
+                    <div class="inputs">
+                        <label for="tip">Tip %</label>
+                        <input
+                            type="text"
+                            id="tip"
+                            name="tip"
+                            placeholder="15"
+                        />
+                    </div>
+                    <div class="inputs">
+                        <label for="people">Number of people</label>
+                        <input
+                            type="text"
+                            id="people"
+                            name="people"
+                            placeholder="1"
+                        />
+                    </div>
+                    <input type="submit" value="Submit" />
+                </form>
+                <div class="calculate-section">
+                    <div class="tip-calculated">
+                        <h2>Tip</h2>
+                        <p>$<span>0.00</span></p>
+                    </div>
+                    <div class="total-calculated">
+                        <h2>Total</h2>
+                        <p>$<span>0.00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
