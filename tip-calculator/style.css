@@ -101,19 +101,36 @@ body {
 .container {
     /* max-width: 130rem; */
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 6.4rem;
 }
 
-/* .input-section {
-    display: flex;
-    flex-direction: column;
-} */
+.input-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+}
 
-.inputs {
-    display: flex;
-    justify-content: space-between;
-    gap: 2.4rem;
+.inputs label {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+}
+
+.inputs input {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.8rem;
+    font-family: inherit;
+    color: inherit;
+    border-radius: 9px;
+    background-color: #eee;
+    border: none;
+}
+
+.inputs input::placeholder {
+    color: #aaa;
 }
 
 .tip-calculated,
