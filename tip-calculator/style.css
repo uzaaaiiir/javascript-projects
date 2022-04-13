@@ -101,7 +101,7 @@ body {
 .container {
     /* max-width: 130rem; */
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 6.4rem;
 }
 
@@ -156,6 +156,12 @@ body {
     background-color: #ccc;
     color: black;
     box-shadow: inset 0px 0px 0px 1px black;
+}
+
+.calculate-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
 }
 
 .tip-calculated,
