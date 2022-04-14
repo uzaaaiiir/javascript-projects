@@ -7,7 +7,7 @@ const tip = document.querySelector(".tip");
 // Calculate Button
 const form = document.querySelector(".input-section");
 console.log(form);
-const calculateBtn = document.querySelector(".input-section");
+const calculateBtn = document.querySelector(".btn");
 // const submitBtn = document.getElementById("submit");
 
 // Input Data by User
@@ -16,6 +16,7 @@ let tipPercent = form.elements[1];
 let numberOfPeople = form.elements[2];
 console.log(totalBill);
 console.log(tipPercent);
+console.log(numberOfPeople);
 // const totalBill = document.querySelector("#bill");
 // const tipPercent = document.querySelector("#tip");
 // const numberOfPeople = document.querySelector("#people");
@@ -28,18 +29,23 @@ const calculateTip = function () {
 // Calculate Total Bill Per Person
 const calculateTotalPerPerson = function () {
     const tipAmount = calculateTip();
+    console.log(`Tip Amount: ${tipAmount}`);
+    console.log(
+        `number of people: ${
+            numberOfPeople.value
+        }, ${typeof numberOfPeople.value}`
+    );
     return (tipAmount + Number(totalBill.value)) / Number(numberOfPeople.value);
 };
 
 const output = function () {
-    console.log(totalBill.value, tipPercent.value);
     const tipTotal = calculateTip();
-    console.log(tipTotal);
+    console.log(`Tip Total: ${tipTotal}`);
     const totalAmount = calculateTotalPerPerson();
+    console.log(`Total Amount: ${totalAmount}`);
     console.log(totalAmount);
     total.textContent = totalAmount;
     tip.textContent = tipTotal;
 };
 
 calculateBtn.addEventListener("click", output);
-// submitBtn.addEventListener("click", output);

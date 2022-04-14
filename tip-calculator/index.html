@@ -25,37 +25,41 @@
         <div class="box">
             <h1 class="calculator-title">Tip Calculator</h1>
             <div class="container">
-                <form class="input-section">
-                    <div class="inputs">
-                        <label for="bill">Bill</label>
-                        <input
-                            type="text"
-                            id="bill"
-                            name="bill"
-                            placeholder="0.00"
-                        />
+                <div class="submit-container">
+                    <form class="input-section">
+                        <div class="inputs">
+                            <label for="bill">Bill</label>
+                            <input
+                                type="number"
+                                id="bill"
+                                name="bill"
+                                placeholder="0.00"
+                            />
+                        </div>
+                        <div class="inputs">
+                            <label for="tip">Tip %</label>
+                            <input
+                                type="number"
+                                id="tip"
+                                name="tip"
+                                placeholder="15"
+                            />
+                        </div>
+                        <div class="inputs">
+                            <label for="people">Number of people</label>
+                            <input
+                                type="number"
+                                id="people"
+                                name="people"
+                                placeholder="1"
+                            />
+                        </div>
+                        <!-- <input type="submit" id="submit" /> -->
+                    </form>
+                    <div class="btn-container">
+                        <button class="btn" type="submit">Calculate!</button>
                     </div>
-                    <div class="inputs">
-                        <label for="tip">Tip %</label>
-                        <input
-                            type="text"
-                            id="tip"
-                            name="tip"
-                            placeholder="15"
-                        />
-                    </div>
-                    <div class="inputs">
-                        <label for="people">Number of people</label>
-                        <input
-                            type="text"
-                            id="people"
-                            name="people"
-                            placeholder="1"
-                        />
-                    </div>
-                    <!-- <input type="submit" id="submit" /> -->
-                    <button class="btn">Calculate!</button>
-                </form>
+                </div>
                 <div class="calculate-section">
                     <div class="tip-calculated">
                         <h2>Tip</h2>
