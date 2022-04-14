@@ -49,3 +49,8 @@ const output = function () {
 };
 
 calculateBtn.addEventListener("click", output);
+document.addEventListener("keydown", function (e) {
+    if (e.key === "Enter") {
+        output();
+    }
+});

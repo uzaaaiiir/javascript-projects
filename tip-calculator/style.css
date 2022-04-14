@@ -96,6 +96,7 @@ body {
 .calculator-title {
     font-size: 4.8rem;
     font-weight: 800;
+    text-align: center;
 }
 
 .container {
@@ -110,7 +111,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3.2rem;
+    gap: 4rem;
     border-bottom: 1px solid #555;
     padding-bottom: 4.8rem;
 }
@@ -190,11 +191,22 @@ body {
     align-items: center;
 }
 
+.per-person {
+    display: block;
+    font-size: 1.6rem;
+    color: #555;
+    opacity: 75%;
+}
+
 /* MEDIA QUERIES */
 @media (max-width: 43.75em) {
     .container {
         grid-template-columns: 1fr;
         gap: 3.2rem;
+    }
+
+    .input-section {
+        grid-template-columns: 1fr;
     }
 }
 
