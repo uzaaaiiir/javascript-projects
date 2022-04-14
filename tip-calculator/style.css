@@ -223,7 +223,7 @@ body {
     }
 
     .input-section {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -234,5 +234,8 @@ body {
     .container {
         grid-template-columns: 1fr;
         gap: 3.2rem;
+    }
+    .input-section {
+        grid-template-columns: 1fr;
     }
 }
